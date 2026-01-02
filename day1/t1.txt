@@ -1,0 +1,36 @@
+what is React js ?
+React.js is a JavaScript library used for building user interfaces (UI) — mainly single-page applications (SPAs).
+It helps create reusable UI components and makes the UI update efficiently when data changes.
+
+history :
+React was created by Jordan Walke, a software engineer at Facebook.
+
+Key Features
+Component-Based – Everything in React is built using components.
+Declarative – You describe what you want to see, and React updates the UI automatically.
+Virtual DOM – React uses a virtual copy of the DOM for faster updates.
+Unidirectional Data Flow – Data flows in one direction (from parent → child).
+JSX (JavaScript XML) – Lets you write HTML inside JavaScript.
+
+Why React?
+Before React, updating the DOM (Document Object Model) was slow and complicated.
+React simplifies UI updates using a Virtual DOM and component-based architecture.
+
+Benefits of Using React:
+Fast – Uses Virtual DOM for efficient updates.
+Reusable Components – Build once, use anywhere.
+Easy to Learn – Based on simple JS concepts.
+Huge Community – Tons of resources and libraries.
+
+Components
+Everything in React is a component.
+A component is a reusable, independent block of UI.
+It can be a function or a class.
+
+JSX (JavaScript XML)
+JSX allows you to write HTML inside JavaScript.
+
+React creates a VIRTUAL DOM in memory.
+Instead of manipulating the browser's DOM directly, 
+React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.
+React only changes what needs to be changed!
