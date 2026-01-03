@@ -1,0 +1,95 @@
+summary 
+
+React is a js libraries
+React works on component based architecture
+React is used to build SPAs
+React works on virtual DOM
+Reatc is less expensive in terms of DOM manipulation 
+
+HOw we can create boiler plate using tools
+1 CRA(create react app )
+2 vite (latest and recom)
+
+1 CRA :
+    - Tool created by facebook to help dev quikly start a new React Project 
+    - It sets up evr.. for up
+    - Webpack 
+    - babel (Compiler or interpiler)(.jsx .js .ts )
+    - babel -  convert modern js (ES6+) into backward compatible js 
+    - command : npm create-react-app my-app
+
+2. Vite:
+    - It’s a modern front-end build tool created by Evan You (the creator of Vue.js) in 2020.
+    - a newer and faster tool built by the creator of Vue.js
+    - it also helps u start new r proj use diff approach thats make to much fater app lighte 
+    - command : npm create vite@latest my-app
+
+CRA VS Vite :
+1. CRA uses webpack , webpack bundles your entire app before starting the server 
+2. when u sav f , webpack rebuilds many parts again - slow ref
+
+vite:
+1 uses ES build and native browser modules
+2 vite starts server instantly -> doesn't bundle Everything
+3 compiles file uare currtly viewung 
+4 Hot Module Replacement (HMR) — instantly updates code changes.
+
+
+how create 
+npm create vite@latest myapp
+note : vite req node >v20.19+
+
+Root folder : 
+
+node modules    
+    - supportive dependenciees are kept here(viet react , reactDom)
+    - npm install command will install the package and unpack here 
+    - Do not edit 
+
+How to run app - npnm run dev
+how to install pack - npm i 
+how to inst spe pack - npm i <packcage name>
+
+
+allow u to create 
+- public:
+    - stores static files (like logo icons )
+    - static files not changable  - vite just copies 
+    - 
+
+- src:
+    -/ assets /
+                images
+                icons 
+                font 
+                css js    
+              * all static file store in public   
+     entry point link in index.html
+     / main.jsx / 
+        connetcs react with dom (HTML page)
+    / index.css /
+        Contains global styles for your entire application.
+    / app.jsx   / 
+                main comp of react app / body of app
+                first comp render after startup
+
+    / app.css  / 
+        only for  app.jsx                 
+
+
+/  eslint.config.js
+        It helps you write cleaner, consistent, and error-free code.
+
+/  package.json 
+        contain project metadata and dependenciees
+        npm script dev build etc
+
+
+/ package-lock.json / 11
+        lock versions need only that packges 
+ ^
+
+ vite.config.js
+        is config file for vite pack 
+        control rect app develop
+        
