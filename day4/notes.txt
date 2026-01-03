@@ -1,0 +1,31 @@
+LifeCycle of React
+phases 
+1. Mounting 
+2. updating
+3. unmounting
+
+1. mounting phases 
+        whern comp is created and inserted into dom
+
+        constructor(prop)-> initialise state and binds the meth
+        render() -> returns JSX
+        componentDidMount ()  - runs after the comp is first rendered
+
+        when comp are cer and ins in vi dom
+
+2. Updating         
+        Occurs when prop or state chnge and comp re-render 
+        render() -> returns jsx
+        componentDidUpdate(prevProps, prevState) ->  runs afte the update meth
+        shouldComponentUpdate(nextProps , nextState) -> to stope unnessesary 
+
+
+
+3. Unmountiing :
+        when the comp is removed from the DOM
+        componentWillUnmount() -> cleanup(timer, event listerns etc)
+
+Error handling:
+        componentDidCatch(error ,info) ->   for error
+
+StrictMode         
