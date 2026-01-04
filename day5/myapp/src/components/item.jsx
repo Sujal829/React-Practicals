@@ -9,10 +9,9 @@ function ItemList() {
 
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // 🟢 Mounting Phase
   useEffect(() => {
     console.log("🟢 Mounting phase: Component mounted");
-  },[]); // Empty dependency array → runs only once on mount/unmount
+  },[]);
   
   useEffect(() => {
     if(selectedItem == null){
@@ -24,9 +23,8 @@ function ItemList() {
     if (selectedItem !== null) {
       console.log("🟠 Updating phase: selectedItem changed");
     }
-  }, [selectedItem]); // Runs whenever selectedItem updates
+  }, [selectedItem]);
 
-  
   const handleClick = (item) => {
     setSelectedItem(item);
   };
