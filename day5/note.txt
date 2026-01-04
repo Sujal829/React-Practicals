@@ -1,0 +1,37 @@
+Phases of React Lifecycle (Detailed Notes)
+React works in phases, which define how a component is created, updated, and destroyed in the browser.
+
+In simple terms:
+A React component goes through three main phases during its lifetime:
+Mounting → Updating → Unmounting\
+
+Mounting Phase (Component Creation)
+This is the birth phase of a component — when it is first created and added to the DOM.
+🔹 What Happens:
+React performs the following steps internally:
+Constructor() (optional)
+render()
+componentDidMount()
+
+| Method                                     | Description                                                                                                    |
+| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **constructor(props)**                     | Initializes the component, sets up state and bindings.                                                         |
+| **getDerivedStateFromProps(props, state)** | Updates the state based on props before rendering. Rarely used.                                                |
+| **render()**                               | Returns the JSX that should be displayed in the UI.                                                            |
+| **componentDidMount()**                    | Runs *after* the component is inserted into the DOM. Commonly used for API calls, DOM manipulation, or timers. |
+
+
+
+MOUNTING PHASE — IN DETAIL
+Definition
+Mounting is the phase when a React component is being created and inserted into the DOM for the first time.
+
+Initializes your component.
+
+Sets up its state and props.
+Calls lifecycle functions like:
+In Class Components → constructor(), getDerivedStateFromProps(), render(), and componentDidMount().
+In Functional Components → useEffect() with an empty dependency array ([]).
+
+useEffect() runs after every render by default,
+but you can control when it runs using the dependency array ([]).
