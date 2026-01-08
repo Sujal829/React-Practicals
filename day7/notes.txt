@@ -1,0 +1,53 @@
+
+component works with lifecycle phases
+1. Mounting
+2. updating
+3. Unmounting
+
+1. Mounting :
+    when the component is created and inserted in to dom.
+    constructor(props){
+        super(props)  -> to invoke parent class constructor
+    }
+
+    render(){   // creates dom
+        return(
+            <div> </div>
+        )
+    }
+
+    componentDidMount(){
+        // it gets execute after first render 
+    }
+
+
+2.updating:
+    whenever state or props are changed re-renders the component
+
+
+    render(){
+        return(<></>)
+    }
+
+    state : is storage 
+        - store info 
+        - state can be change 
+        - it store any type of data pre / non-pre
+
+    Props : properties
+        - <img src='./src' alt='name'>
+        - pass info to another component
+        - props cannot change
+
+
+    componentDidUpdate(prevProps,prevState){
+        // whent state prp change do some operations 
+    }
+
+    shouldComponentUpdate(nextProps,nextState){
+        // default return true 
+    }
+if returned false ->no re-rendering
+
+3. Unmounting 
+
